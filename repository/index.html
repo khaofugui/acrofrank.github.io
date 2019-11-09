@@ -356,7 +356,7 @@ var open = function() {
     var errorContainer = repoContainer.find(".blankslate");
     var countContainer = $("#repo-count");
 
-    $.get("https://api.github.com/users/Frank/repos", function(result) {
+    $.get("https://api.github.com/users/acrofrank/repos", function(result) {
       if (result) {
         errorContainer.remove();
         countContainer.text(result.length); //设置项目个数
